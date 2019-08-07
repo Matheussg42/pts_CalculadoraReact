@@ -6,5 +6,5 @@
 
 Preview:
 <p align="center">
-<img src="public/assets/01.gif" />
+![](.gifs/calculadora.gif)
 </p>
