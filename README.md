@@ -6,5 +6,5 @@
 
 Preview:
 <p align="center">
-![](public/assets/01.gif)
+<img src="public/assets/01.gif" />
 </p>
