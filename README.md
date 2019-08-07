@@ -6,5 +6,5 @@
 
 Preview:
 <p align="center">
-![](https://im4.ezgif.com/tmp/ezgif-4-d4188414780f.gif)
+![](public/assets/01.gif)
 </p>
