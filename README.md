@@ -5,6 +5,5 @@
 #### Calculadora em React
 
 Preview:
-<p align="center">
+
 ![](.gifs/calculadora.gif)
-</p>
