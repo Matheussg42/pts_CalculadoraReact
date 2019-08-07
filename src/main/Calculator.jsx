@@ -36,7 +36,7 @@ export default class Calculator extends Component{
              const currentOperation = this.state.operation
 
              const values = [ ...this.state.values]
-             let mathResult = this.mathOperation(`${values[0]} ${currentOperation} ${values[1]}`);
+             let mathResult = this.mathOperation(values[0], currentOperation, values[1]);
              if( mathResult === false){
                 this.setState({
                     displayValue : values[0],
@@ -71,9 +71,12 @@ export default class Calculator extends Component{
             case '*':
               return value0 * value1;
             case '/':
-              return value0 / value1;
+                if(value0 === 0 && value1 === 0){
+                    return false
+                }
+                return value0 / value1;
             default:
-              return false;
+                return false;
           }
      }
 
@@ -93,7 +96,6 @@ export default class Calculator extends Component{
             const values = [...this.state.values];
             values[i] = newValue;
             this.setState({ values });
-            console.log(values);
         }
      };
     
